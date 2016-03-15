@@ -19,10 +19,9 @@ RecipeSchema = new SimpleSchema({
     createdAt: {
         type: Date,
         label: "Created At",
-        autoValue: function(){
-            return new Date()
+        autoValue: function() {
+            return new Date() 
         }
-        
     }
 });
 
