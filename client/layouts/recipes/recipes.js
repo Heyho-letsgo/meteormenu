@@ -1,1 +1,2 @@
-Meteor.subscribe('recipes'); 
+Meteor.subscribe('recipes');
+
