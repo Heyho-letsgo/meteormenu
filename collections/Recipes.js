@@ -26,7 +26,7 @@ RecipeSchema = new SimpleSchema({
         type: String,
         label: "Description"
     },
-    Ingredients: {
+    ingredients: {
         type: [Ingredient]
     },
     inMenu: {
