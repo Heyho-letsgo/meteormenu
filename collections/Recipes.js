@@ -6,6 +6,7 @@ Recipes.allow({
     }
 });
 
+
 Ingredient = new SimpleSchema({
     name: {
         type: String
