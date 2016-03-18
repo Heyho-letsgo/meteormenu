@@ -6,7 +6,9 @@
 			{{#each Ingredients}}
 			<span class="ingredient">{{name}} {{amount}} | </span>
 			{{/each}}
-			<a href="/recipe/{{_id}}">Voir en détail</a>
 		</p>
+		<a href="/recipe/{{_id}}">Voir en détail</a>
+		<button class="btn-primary toggle-menu">Ajouter au menu</button>
+		<button class="btn-deny toggle-menu">Supprimer du menu</button>
 	</article>
 </Template> 
