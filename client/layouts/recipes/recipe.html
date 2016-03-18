@@ -1,14 +1,22 @@
 <Template name="Recipe">	
-	<article class="recipe">
+	<article class="recipe {{#if inMenu}}in-menu{{/if}}">
 		<h3>{{name}}</h3>
 		<p>{{desc}}</p>
+		<p>{{#if inMenu}}
+			"true"
+			{{else}}
+			"false"
+			{{/if}}
+			</p>
 		<p>
-			{{#each Ingredients}}
+			{{#each ingredients}}
 			<span class="ingredient">{{name}} {{amount}} | </span>
 			{{/each}}
 		</p>
-		<a href="/recipe/{{_id}}">Voir en détail</a>
-		<button class="btn-primary toggle-menu">Ajouter au menu</button>
-		<button class="btn-deny toggle-menu">Supprimer du menu</button>
+			
+			<a href="/recipe/{{_id}}">Voir en détail</a><br>
+			<button class="btn-primary toggle-menu">Ajouter au menu</button>
+			<button class="btn-deny toggle-menu">Supprimer du menu</button>
+		
 	</article>
 </Template> 
